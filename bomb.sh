@@ -31,7 +31,7 @@ echo -e ""
 figlet DarkHack
 echo ""
 sleep 1
-echo "                                    $WHITE Author:$RED King-Nazim And MishalMMSS"
+echo "  $WHITE Author:$RED King-Nazim And MishalMMSS"
 echo ""
 
 }
@@ -148,7 +148,7 @@ echo -e '''
          \e[1;91m      ╔═══════════╗
          \e[1;91m    ╔═╝\e[1;97m███████████\e[1;91m╚═╗
          \e[1;91m   ╔╝\e[1;97m███████████████\e[1;91m╚╗
-         \e[1;91m   ║\e[1;97m█████\e[1;92mDarkHack\e[1;97m█████\e[1;91m║
+         \e[1;91m   ║\e[1;97m█████\e[1;92mDarkHack\e[1;97m████\e[1;91m║
          \e[1;91m   ║\e[1;97m█████████████████\e[1;91m║\e[1;91m
          \e[1;91m   ║\e[1;97m█████████████████\e[1;91m║\e[1;91m
          \e[1;91m   ║\e[1;97m█\e[1;91m╔\e[1;97m█████████████\e[1;91m╗\e[1;97m█\e[1;91m║\e[1;91m
@@ -165,9 +165,9 @@ echo -e '''
          \e[1;91m╔╝\e[1;97m█████\e[1;91m║\e[1;97m█\e[1;91m║\e[1;97m██\e[1;91m║\e[1;97m██\e[1;91m║\e[1;97m█\e[1;91m║
          \e[1;91m║\e[1;97m██████\e[1;91m║\e[1;97m█████████\e[1;91m║
 ''' | pv -qL 300
-sleep 1.2
-echo -e "                                  This is\e[1;0m King-Nazim And MishalMMSS" | pv -qL 150
-echo "                                     From Dark Hackers !" | pv -qL 150
+sleep 1
+echo "      This is\e[1;0m King-Nazim And MishalMMSS" | pv -qL 150
+echo "      From Dark Hackers !" | pv -qL 150
 echo ""
 echo -e "     $GREEN  Ethical Hackers$WHITE |$GREEN CyberSec Students$WHITE |$GREEN Programmers" | pv -qL 10
 echo ""
