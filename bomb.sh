@@ -166,8 +166,8 @@ echo -e '''
          \e[1;91m║\e[1;97m██████\e[1;91m║\e[1;97m█████████\e[1;91m║
 ''' | pv -qL 300
 sleep 1
-echo "      This is\e[1;0m King-Nazim And MishalMMSS" | pv -qL 150
-echo "      From Dark Hackers !" | pv -qL 150
+echo -e "                This is $GREEN King-Nazim And MishalMMSS" | pv -qL 150
+echo "                 From Dark Hackers !" | pv -qL 150
 echo ""
 echo -e "     $GREEN  Ethical Hackers$WHITE |$GREEN CyberSec Students$WHITE |$GREEN Programmers" | pv -qL 10
 echo ""
