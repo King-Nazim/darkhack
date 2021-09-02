@@ -66,9 +66,3 @@ bash bomb.sh
 
 ## Note
 * `This bomber only works in India !!`
-
-## Licence
-Apache 2.0  Anubhav Kashyap
-
-
-## Screenshots (Termux)
