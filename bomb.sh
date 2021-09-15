@@ -32,6 +32,8 @@ figlet DarkHack
 echo ""
 sleep 1
 echo "  $WHITE Author:$RED King-Nazim And MishalMMSS"
+sleep 1
+echo "This Tool is developed by Dark Fighting Army (DFA)
 echo ""
 
 }
