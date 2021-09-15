@@ -33,6 +33,7 @@ echo ""
 sleep 1
 echo "  $WHITE Author:$GREEN King-Nazim And MishalMMSS"
 sleep 1
+echo ""
 echo "This Tool is developed by Dark Fighting Army (DFA)"
 echo ""
 
