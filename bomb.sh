@@ -319,13 +319,15 @@ if [ "$options" -eq "2" ];then
   cd $PREFIX/share
   rm -rf darkhack > /dev/null 2>&1
   git clone https://github.com/King-Nazim/darkhack
-  cd darkhack && chmod +x start.sh
+  cd $PREFIX/share/darkhack && chmod +x bomb.sh
   sleep 1
 cat <<- CONFI > $PREFIX/bin/darkhack
 #!/bin/bash
 args="\$@"
 bash \$PREFIX/share/darkhack/bomb.sh \$args
 CONFI
+chmod +x $PREFIX/bin/darkhack
+printf "\n${S2}Just run 'darkhack' to run this program${R0}\n"
 fi
 if [ "$options" -eq "3" ];then
   about
@@ -371,6 +373,7 @@ args="\$@"
 bash \$PREFIX/share/darkhack/bomb.sh \$args
 CONF
 chmod +x $PREFIX/bin/darkhack
+printf "\n${S2}Just run 'darkhack' to run this program${R0}\n"
 else
   INTERNET
   REQUIREMENTS
