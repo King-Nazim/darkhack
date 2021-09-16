@@ -29,6 +29,7 @@ INTERNET() {
   fi
 }
 
+<<<<<<< HEAD
 #<<<----------Requirements---------->>>
 REQUIREMENTS() {
 OS=$(uname -o)
@@ -88,6 +89,20 @@ case ${OS} in
     done
     ;;
 esac
+
+banner() {
+
+echo -e "${S2}"
+figlet DarkHack
+echo
+sleep 1
+echo -e "  ${S7} Author:${S2} King-Nazim, MishalMMSS and BHUTUU"
+sleep 1
+echo
+echo "This Tool is developed by Dark Fighting Army (DFA)"
+echo
+
+
 }
 #<<<----------Program---------->>>
 PROGRAM() {
@@ -111,13 +126,13 @@ echo -e "${S2}"
 figlet DarkHack
 echo
 sleep 1
-echo -e "  ${S7} Author:${S1} King-Nazim And MishalMMSS"
+echo -e "  ${S7} Author:${S1} King-Nazim, MishalMMSS and BHUTUU"
 echo
 
 }
 bombrecord() {
   clear; echo; figlet Bomb Record; echo; echo
-  echo -e "     \e[92m[\e[36m~\e[92m]\e[93m This is a record of numbers which had been bombed !\e[93m"
+  echo -e "     ${S2}[${S6}~${S2}]${S3} This is a record of numbers which had been bombed !${R0}"
   printf "${S2}\n"
   cat .bombrecord.txt
 exit 1
@@ -184,7 +199,9 @@ echo -e '''
          \e[1;91m║\e[1;97m██████\e[1;91m║\e[1;97m█████████\e[1;91m║
 ''' | pv -qL 300
 sleep 1
+
 echo -e "                This is ${S2} King-Nazim, MishalMMSS and BHUTUU" | pv -qL 150
+
 echo "                 From Dark Hackers !" | pv -qL 150
 echo
 echo -e "     ${S2}  Ethical Hackers${S7} |${S2} CyberSec Students${S7} |${S2} Programmers" | pv -qL 10
@@ -221,12 +238,20 @@ read targett
 passd=$(echo "$targett" | md5sum | awk '{printf $1}')
 if [[ $passd == $no1 || $passd == $no2 || $passd == $no3 || $passd == $mo1 || $passd == $mo2 || $passd == $mo3 ]]; then
 echo
+
 printf "${S2}[${S1}!${S2}]${S1}Wrong number lol ;)! don't be so smart rotor. you can be self bombed for this wrong attempt!!Me Suman kumar ~BHUTUU github:- https://github.com/BHUTUU/ ${R0}"
+
+printf "\033[1;32m[\033[1;31m!\033[1;32m]\033[1;31mWrong number lol ;)! don't be so smart rotor. you can be self bombed for this wrong attempt!!Me Suman kumar ~BHUTUU github:- https://github.com/BHUTUU/ \033[0m\n"
+
 echo
 exit 1
 elif [[ $passd == $no4 || $passd == $no5 || $passd == $no6 || $passd == $no7 || $passd == $no8 || $passd == $no9 ]]; then
 echo
+
 printf "${S2}[${S1}!${S2}]${S1}Wrong number lol! it developer here!! this bombing may results to self bomb for you so don't be so smart!!${R0}\n"
+
+printf "${S2}[${S1}!${S2}]${S1}Wrong number lol! it developer here!! this bombing may results to self bomb for you so don't be so smart!!${R0}\n"
+
 echo
 exit 1
 else
@@ -323,7 +348,7 @@ if [ "$options" -eq "007" ];then
 fi
 if [ "$options" -eq "4" ];then
   echo
-  echo -e "${S2}[${S1}~${S2}]${S3} Thanks for Using Dark_Hacks !\e[93m"
+  echo -e "${S2}[${S1}~${S2}]${S3} Thanks for Using Dark_Hacks !${S3}"
   echo
   exit 1
 else
@@ -333,6 +358,7 @@ fi
 
 }
 menux
+
 }
 
 
@@ -362,3 +388,4 @@ else
   REQUIREMENTS
   PROGRAM
 fi
+
