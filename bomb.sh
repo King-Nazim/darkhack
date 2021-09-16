@@ -29,7 +29,6 @@ INTERNET() {
   fi
 }
 
-<<<<<<< HEAD
 #<<<----------Requirements---------->>>
 REQUIREMENTS() {
 OS=$(uname -o)
