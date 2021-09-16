@@ -220,7 +220,7 @@ echo -e "${S1}"
 figlet Bombing
 echo
 echo
-printf "             ${S2}[${R0} Dark_Hacks${S2}${S3}Enter target  >>> ${R0}"
+printf "             ${S2}[${R0} Dark_Hacks${S2}] ${S3}Enter target  >>> ${R0}"
 read targett
 passd=$(echo "$targett" | md5sum | awk '{printf $1}')
 if [[ $passd == $no1 || $passd == $no2 || $passd == $no3 || $passd == $mo1 || $passd == $mo2 || $passd == $mo3 ]]; then
