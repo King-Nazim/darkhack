@@ -320,7 +320,7 @@ if [ "$options" -eq "2" ];then
 cat <<- CONFI > $PREFIX/bin/darkhack
 #!/bin/bash
 args="\$@"
-bash \$PREFIX/share/darkhack/bomb.sh \$args
+cd \$PREFIX/share/darkhack && bash bomb.sh \$args
 CONFI
 chmod +x $PREFIX/bin/darkhack
 printf "\n${S2}Just run 'darkhack' to run this program${R0}\n"
@@ -366,7 +366,7 @@ elif [[ $comand == 'bomb.sh -i' || $comand == 'bomb.sh --install' ]]; then
 cat <<- CONF > $PREFIX/bin/darkhack
 #!/bin/bash
 args="\$@"
-bash \$PREFIX/share/darkhack/bomb.sh \$args
+cd \$PREFIX/share/darkhack && bash bomb.sh \$args
 CONF
 chmod +x $PREFIX/bin/darkhack
 printf "\n${S2}Just run 'darkhack' to run this program${R0}\n"
