@@ -226,16 +226,12 @@ passd=$(echo "$targett" | md5sum | awk '{printf $1}')
 if [[ $passd == $no1 || $passd == $no2 || $passd == $no3 || $passd == $mo1 || $passd == $mo2 || $passd == $mo3 ]]; then
 echo
 
-printf "${S2}[${S1}!${S2}]${S1}Wrong number lol ;)! don't be so smart rotor. you can be self bombed for this wrong attempt!!Me Suman kumar ~BHUTUU github:- https://github.com/BHUTUU/ ${R0}"
-
-printf "\033[1;32m[\033[1;31m!\033[1;32m]\033[1;31mWrong number lol ;)! don't be so smart rotor. you can be self bombed for this wrong attempt!!Me Suman kumar ~BHUTUU github:- https://github.com/BHUTUU/ \033[0m\n"
+printf "${S2}[${S1}!${S2}]${S1}Wrong number lol ;)! its developer here!! Don't be so smart rotor. you can be self bombed for this wrong attempt!!Me Suman kumar ~BHUTUU github:- https://github.com/BHUTUU/ ${R0}\n"
 
 echo
 exit 1
 elif [[ $passd == $no4 || $passd == $no5 || $passd == $no6 || $passd == $no7 || $passd == $no8 || $passd == $no9 ]]; then
 echo
-
-printf "${S2}[${S1}!${S2}]${S1}Wrong number lol! it developer here!! this bombing may results to self bomb for you so don't be so smart!!${R0}\n"
 
 printf "${S2}[${S1}!${S2}]${S1}Wrong number lol! it developer here!! this bombing may results to self bomb for you so don't be so smart!!${R0}\n"
 
