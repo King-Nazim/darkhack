@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+#set -x
 #By suman kumar ~BHUTUU github:- https://github.com/BHUTUU
 #for darkhack as a collabrator
 #date:- 14/09/2021
