@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 #By suman kumar ~BHUTUU github:- https://github.com/BHUTUU
 #for darkhack as a collabrator
 #date:- 14/09/2021
@@ -88,21 +89,8 @@ case ${OS} in
     done
     ;;
 esac
-
-banner() {
-
-echo -e "${S2}"
-figlet DarkHack
-echo
-sleep 1
-echo -e "  ${S7} Author:${S2} King-Nazim, MishalMMSS and BHUTUU"
-sleep 1
-echo
-echo "This Tool is developed by Dark Fighting Army (DFA)"
-echo
-
-
 }
+
 #<<<----------Program---------->>>
 PROGRAM() {
 
