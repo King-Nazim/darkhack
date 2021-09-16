@@ -363,13 +363,14 @@ elif [[ $comand == 'bomb.sh -i' || $comand == 'bomb.sh --install' ]]; then
   cd $PREFIX/share
   rm -rf darkhack > /dev/null 2>&1
   git clone https://github.com/King-Nazim/darkhack
-  cd darkhack && chmod +x start.sh
+  cd $PREFIX/share/darkhack && chmod +x bomb.sh
   sleep 1
 cat <<- CONF > $PREFIX/bin/darkhack
 #!/bin/bash
 args="\$@"
 bash \$PREFIX/share/darkhack/bomb.sh \$args
 CONF
+chmod +x $PREFIX/bin/darkhack
 else
   INTERNET
   REQUIREMENTS
