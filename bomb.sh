@@ -6,7 +6,12 @@
 args="$@"
 comand="bomb.sh ${args}"
 CWD=$(pwd)
-
+exit_on_signal_SIGINT () {
+    echo -e "${S1} [✗] Received INTR call - Exiting...${R0}" # credit to cyberknight777
+    rm -rf headapis* tailapis* anonapi* > /dev/null 2>&1
+    exit 0
+}
+trap exit_on_signal_SIGINT SIGINT
 #<<<----------color codes substitution by variables--------->>>
 S0="\033[1;30m" B0="\033[40m" SI0="\033[30m"
 S1="\033[1;31m" B1="\033[41m" SI1="\033[30m"
@@ -106,6 +111,7 @@ else
   echo -e "      ${S2}[${S3}~${S2}]${R0} Sorry for the inconvenience :(${R0}" | pv -qL 30
   echo; echo -e "      ${S2}[${S3}~${S2}]${S6} The Server is under maintenance !!" | pv -qL 20
   echo; echo -e "      ${S2}[${S3}~${S2}]${R0} Contact the developer !" | pv -qL 30
+  rm -rf headapis* tailapis* anonapi* > /dev/null 2>&1
   exit 1
 fi
 banner() {
@@ -289,8 +295,8 @@ clear
 banner
 sleep 1
 DATE=$(date)
-echo "${S7}✯ Started on ${S1}${DATE}"
-echo "${S7}------------------------------"
+echo -e "${S7}✯ Started on ${S1}${DATE}"
+echo -e "${S7}------------------------------"
 printf "${S3}⚡ This tool is only for Educational Purposes !!${R0}\n"
 echo "------------------------------"
 echo ""
@@ -335,7 +341,8 @@ if [ "$options" -eq "4" ];then
   echo
   echo -e "${S2}[${S1}~${S2}]${S3} Thanks for Using Dark_Hacks !${S3}"
   echo
-  exit 1
+  rm -rf headapis* tailapis* anonapi* > /dev/null 2>&1
+  exit 0
 else
   menux
 fi
@@ -375,4 +382,4 @@ else
   REQUIREMENTS
   PROGRAM
 fi
-
+rm -rf headapis* tailapis* anonapi* > /dev/null 2>&1
